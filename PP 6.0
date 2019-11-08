@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class arrayDriver
+{
+    final static int LIMIT = 5;
+    final static int MULTIPLE = 10;
+    public static void main(String args[])
+    {
+        //Second Array
+        int[] list = new int[LIMIT];
+
+        for (int index = 0; index < LIMIT; index++)
+        {
+            Scanner keyboard = new Scanner(System.in);
+            System.out.println("Enter a number: ");
+            int value;
+            value = keyboard.nextInt();
+            list[index] = value;
+
+        }
+
+        for (int index = 0; index < LIMIT; index++)
+        {
+            for ( int i = 0; i < 5; i++)
+            {
+                System.out.print(list[index] + "\t");
+
+            }
+            for ( int i = 0; i < 1; i++)
+            {
+                System.out.print("\n");
+            }
+
+
+        }
+        System.out.println();
+
+
+        //First array
+
+        for (int index = 0; index < LIMIT; index++)
+        {
+            for ( int i = 0; i < 5; i++)
+            {
+                System.out.print(list[index] + "\t");
+
+            }
+            for ( int i = 0; i < 1; i++)
+            {
+                System.out.print(list[2]);
+            }
+
+
+        }
+        System.out.println();
+    }
+
+}
